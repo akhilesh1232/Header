@@ -4,7 +4,8 @@
 }
 
 nav{
-    background: rgba( 5, 56, 107, 1.00 );
+background: rgb(2,0,36);
+background: linear-gradient(52deg, rgba(2,0,36,1) 15%, rgba(2,43,73,1) 56%, rgba(7,59,97,0.9589371980676329) 100%);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0.0px );
     -webkit-backdrop-filter: blur( 0.0px );
