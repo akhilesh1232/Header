@@ -4,9 +4,23 @@
 }
 
 nav{
-background: rgb(2,0,36);
-background: linear-gradient(52deg, rgba(2,0,36,1) 15%, rgba(2,43,73,1) 56%, rgba(7,59,97,0.9589371980676329) 100%);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 0.0px );
-    -webkit-backdrop-filter: blur( 0.0px );
+background: linear-gradient(52deg, rgba(2,0,36,1) 15%, rgba(2,43,73,1) 56%, rgba(7,59,97,0.9589371980676329) 100%); 
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+    .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+} 
+.navbar .nav-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.navbar .nav-item:hover::after {
+    width: 100%;
+    transition: width .3s;
 }
